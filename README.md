@@ -29,3 +29,4 @@ A simple web application that analyzes whether a given statement is likely truth
 
 This is a fun experimental project and not an actual lie detection system.
 
+
