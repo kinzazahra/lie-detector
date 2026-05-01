@@ -5,15 +5,31 @@
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-
 <div class="container">
-    <h1>🕵️ Digital Lie Detector</h1>
-
+    <h1>Digital Lie Detector</h1>
     <textarea id="text" placeholder="Type your statement..."></textarea>
-
-    <button onclick="analyze()">Analyze</button>
-
-    <h2 id="result"></h2>
+    <button onclick="analyze()">Analyze Statement</button>
+    
+    <!-- New Analytics Breakdown Card -->
+    <div id="results-container" class="results-card">
+        <h2 id="result-verdict"></h2>
+        <div class="stat-row">
+            <span>Typing Speed:</span>
+            <span id="stat-wpm"></span>
+        </div>
+        <div class="stat-row">
+            <span>Sentiment Score:</span>
+            <span id="stat-sentiment"></span>
+        </div>
+        <div class="stat-row">
+            <span>Suspicious Keywords:</span>
+            <span id="stat-flags"></span>
+        </div>
+        <div class="stat-row">
+            <span>Backspaces/Edits:</span>
+            <span id="stat-edits"></span>
+        </div>
+    </div>
 </div>
 
 <script src="/static/script.js"></script>
